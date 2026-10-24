@@ -2,7 +2,7 @@
 # DoodlePin installer.
 #
 #   From the downloaded zip:   bash install.sh
-#   Straight from the web:     curl -fsSL https://harshgaba1196.github.io/doodle-site/install.sh | bash
+#   Straight from the web:     curl -fsSL https://xoftverse.com/doodle-pin/install.sh | bash
 #   Remove DoodlePin:          bash install.sh --uninstall
 set -euo pipefail
 

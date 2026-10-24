@@ -63,11 +63,11 @@ The website lives in `docs/` (`index.html`, `privacy-policy.html`, `install.sh`,
 | What | Where |
 |---|---|
 | App source and releases | https://github.com/HarshGaba1196/doodlePin |
-| Website (GitHub Pages) | https://github.com/HarshGaba1196/doodle-site → https://harshgaba1196.github.io/doodle-site/ |
+| Website (GitHub Pages) | https://github.com/HarshGaba1196/doodle-pin → https://xoftverse.com/doodle-pin/ |
 | Zip download | https://github.com/HarshGaba1196/doodlePin/releases/latest/download/DoodlePin.zip |
-| One-line install | `curl -fsSL https://harshgaba1196.github.io/doodle-site/install.sh \| bash` |
+| One-line install | `curl -fsSL https://xoftverse.com/doodle-pin/install.sh \| bash` |
 
-To release a new version: bump `MARKETING_VERSION` in the Xcode project, run `./scripts/package.sh`, create a release on the doodlePin repo with `dist/DoodlePin.zip` attached (keep the file name), then copy `docs/` into the doodle-site repo and push.
+To release a new version: bump `MARKETING_VERSION` in the Xcode project, run `./scripts/package.sh`, create a release on the doodlePin repo with `dist/DoodlePin.zip` attached (keep the file name), then copy `docs/` into the doodle-pin repo and push.
 
 The installer clears macOS's "downloaded from the internet" flag, because the app isn't notarized. Once you have a paid Apple Developer account, sign the app with your Developer ID and notarize it. Users can then open it with a plain double-click.
 
