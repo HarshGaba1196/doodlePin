@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DoodlePin Privacy Policy</title>
+<meta name="description" content="DoodlePin collects no data. Everything the app uses stays on your Mac.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+  /* Layout: one readable column on a "desk", with a sticky-note summary pinned near the top. */
+  :root {
+    --desk: #f6f3ec;
+    --paper: #ffffff;
+    --ink: #22201b;
+    --muted: #5f5a50;
+    --rule: #e3ddd0;
+    --note: #ffe68a;
+    --note-ink: #2b2614;
+    --coral: #d4553d;
+    --yes: #2f7d4f;
+    --display: "Patrick Hand", "Chalkboard SE", "Comic Sans MS", cursive;
+    --body: "Atkinson Hyperlegible", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --desk: #1b1a17; --paper: #24221e; --ink: #ece7dc; --muted: #aaa392; --rule: #3a372f;
+      --note: #e8cd63; --note-ink: #231f0e; --coral: #f08a72; --yes: #6fc794;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --desk: #1b1a17; --paper: #24221e; --ink: #ece7dc; --muted: #aaa392; --rule: #3a372f;
+    --note: #e8cd63; --note-ink: #231f0e; --coral: #f08a72; --yes: #6fc794;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--desk);
+    color: var(--ink);
+    font: 17px/1.65 var(--body);
+    padding-inline: 16px;
+    padding-block: 40px 64px;
+  }
+  .page { max-width: 44rem; margin: 0 auto; display: grid; gap: 36px; }
+
+  header { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+  header svg { width: 76px; height: 76px; }
+  .doodle-fill { fill: var(--paper); }
+  .doodle-ink { stroke: var(--ink); fill: none; }
+  .doodle-dot { fill: var(--ink); }
+  .eyebrow { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+  h1 { font: 400 clamp(2.3rem, 7vw, 3.2rem)/1.05 var(--display); margin: 2px 0 4px; text-wrap: balance; }
+  .dates { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .note {
+    background: var(--note);
+    color: var(--note-ink);
+    padding: 22px 24px 20px;
+    transform: rotate(-0.8deg);
+    box-shadow: 0 10px 22px -12px rgba(0, 0, 0, 0.45);
+    position: relative;
+  }
+  .note::before {
+    content: "";
+    position: absolute; top: -9px; left: 50%;
+    width: 18px; height: 18px; margin-left: -9px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #ff8a8a, #b3121d);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.35);
+  }
+  .note h2 { font: 400 1.7rem/1.1 var(--display); margin: 0 0 6px; }
+  .note p { margin: 0; font-size: 18px; }
+
+  main { display: grid; gap: 30px; }
+  section { display: grid; gap: 10px; }
+  h2 { font: 400 1.75rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.2em; display: grid; gap: 6px; }
+  strong { font-weight: 700; }
+  code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--rule); padding: 1px 5px; border-radius: 4px; overflow-wrap: anywhere; }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--paper); }
+  table { width: 100%; border-collapse: collapse; font-size: 15.5px; min-width: 34rem; }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--rule); }
+  tr:last-child td { border-bottom: 0; }
+  th { font-size: 12.5px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  td:first-child { font-weight: 700; white-space: nowrap; }
+  .stays { color: var(--yes); font-weight: 700; white-space: nowrap; }
+
+  .contact { border-top: 2px dashed var(--rule); padding-top: 24px; }
+  .placeholder { background: var(--note); color: var(--note-ink); padding: 0 6px; border-radius: 4px; }
+  footer { color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    header { grid-template-columns: 1fr; }
+    header svg { width: 60px; height: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header>
+    <svg viewBox="0 0 100 92" role="img" aria-label="Pip, the DoodlePin blob">
+      <path class="doodle-fill" d="M50 4 C84 5 99 26 98 52 C97 80 76 88 50 88 C24 88 3 80 3 54 C4 26 18 4 50 4 Z"/>
+      <path class="doodle-ink" stroke-width="3.5" stroke-linejoin="round" d="M50 4 C84 5 99 26 98 52 C97 80 76 88 50 88 C24 88 3 80 3 54 C4 26 18 4 50 4 Z"/>
+      <ellipse cx="37" cy="42" rx="8" ry="9.5" class="doodle-fill"/>
+      <ellipse cx="37" cy="42" rx="8" ry="9.5" class="doodle-ink" stroke-width="2.5"/>
+      <ellipse cx="63" cy="42" rx="8" ry="9.5" class="doodle-fill"/>
+      <ellipse cx="63" cy="42" rx="8" ry="9.5" class="doodle-ink" stroke-width="2.5"/>
+      <circle cx="39" cy="43" r="3.6" class="doodle-dot"/>
+      <circle cx="65" cy="43" r="3.6" class="doodle-dot"/>
+      <path class="doodle-ink" stroke-width="3" stroke-linecap="round" d="M41 63 Q50 72 59 63"/>
+      <ellipse cx="25" cy="58" rx="5" ry="3" fill="#f4a6b4"/>
+      <ellipse cx="75" cy="58" rx="5" ry="3" fill="#f4a6b4"/>
+    </svg>
+    <div>
+      <p class="eyebrow">DoodlePin for Mac</p>
+      <h1>Privacy Policy</h1>
+      <p class="dates">Effective 23 October 2026</p>
+    </div>
+  </header>
+
+  <aside class="note" aria-label="Summary">
+    <h2>The short version</h2>
+    <p>DoodlePin collects no data. It has no accounts, analytics, ads or tracking, and it never connects to the internet. Everything it uses stays on your Mac.</p>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Who we are</h2>
+      <p>DoodlePin is a desktop pet app for macOS made by Harsh Gaba ("we", "us"). This policy explains what the app looks at on your Mac, why, and what happens to it.</p>
+    </section>
+
+    <section>
+      <h2>What we collect</h2>
+      <p>Nothing. DoodlePin does not collect, transmit, sell or share any personal information. The app has no network access, so nothing it sees can leave your Mac. We do not use any third-party SDKs, analytics or advertising services.</p>
+    </section>
+
+    <section>
+      <h2>What the app uses on your Mac</h2>
+      <p>To make the pets feel alive, DoodlePin reads a few things locally while it runs. None of it is sent anywhere.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">What</th><th scope="col">Why</th><th scope="col">Where it goes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pointer position</td>
+              <td>So the pets' eyes follow your cursor and they react when you poke, drag or throw them.</td>
+              <td class="stays">Stays on your Mac</td>
+            </tr>
+            <tr>
+              <td>Time since last input</td>
+              <td>So pets nap when you step away. The app only checks how long ago you last used the mouse or keyboard. It never sees what you type.</td>
+              <td class="stays">Stays on your Mac</td>
+            </tr>
+            <tr>
+              <td>Now playing</td>
+              <td>If "Dance to music" is on, the app listens for the public announcements Apple Music and Spotify make when a song starts or stops, so pets can dance. A pet may show the song title in a speech bubble. Nothing is saved.</td>
+              <td class="stays">Stays on your Mac</td>
+            </tr>
+            <tr>
+              <td>Battery level</td>
+              <td>If "React to battery" is on, pets cheer when you plug in and look tired when the battery is low.</td>
+              <td class="stays">Stays on your Mac</td>
+            </tr>
+            <tr>
+              <td>Calendar events</td>
+              <td>Only if you turn on "Meeting heads-ups" and allow access. The app reads upcoming events to show a reminder about 10 minutes before they start. It only uses each event's title and start time, and stores nothing.</td>
+              <td class="stays">Stays on your Mac</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>What the app saves</h2>
+      <p>DoodlePin saves your preferences on your Mac so your pets are the same next time: which pets you have, their names, hats and glasses, where they were on screen, how hungry they are, your settings, and fun counters like balls fetched and treats eaten. This lives in the app's private storage on your Mac and is never uploaded.</p>
+    </section>
+
+    <section>
+      <h2>Calendar permission</h2>
+      <p>Calendar access is off by default. macOS asks for your permission the first time you turn on meeting heads-ups. You can turn it off any time in DoodlePin's Settings, or in <strong>System Settings → Privacy &amp; Security → Calendars</strong>.</p>
+    </section>
+
+    <section>
+      <h2>Deleting your data</h2>
+      <p>To remove everything DoodlePin has saved, quit the app and move it to the Trash. Its saved settings are in <code>~/Library/Containers/com.harshgaba.DoodlePin</code>, which you can also delete.</p>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>DoodlePin is suitable for all ages. Because it collects no information from anyone, it collects none from children.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If a future version of DoodlePin changes how it handles information, we will update this page and the date at the top before that version is released.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Questions about this policy? Email <span class="placeholder">your-support-email@example.com</span>.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Harsh Gaba. DoodlePin is not affiliated with Apple Inc. or Spotify AB.</footer>
+</div>
+</body>
+</html>
